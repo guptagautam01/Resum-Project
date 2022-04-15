@@ -11,7 +11,7 @@
             <ul class="horizontal-list text-centre nav-menu">
                 <li>
                     <a href="#">Home</a>
-                </li>
+                </li>  
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -74,7 +74,7 @@
     </header>
     <main>
         <section id = "about">
-            <div id="my-image">
+            <div id="my-image" class="fade-in-image">
                 <img src="assets/my-image.jpeg">
             </div>
             <p>
@@ -96,6 +96,35 @@
         
         <section id = "portfolio">
 
+        </section>
+
+        <section id = "contact">
+            <div class = "messageForm">
+                <form>
+                    <div class="inputContainer">
+                        <input type="text" name="name" id="name" placeholder="Name" class="formElement">
+                    </div>
+                    <div class="inputContainer">
+                        <input type="email" name="email" id="email" placeholder="Email Address" class="formElement">
+                    </div>
+                    <div class="inputContainer">
+                        <textarea name="message" id="message" rows="9"  placeholder="Message" class="formElement"></textarea>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="submit" value="SEND MESSAGE" placeholder="Send Message" class="formElement btn">
+                    </div>
+                </form>
+            </div>
+            <div id="contact-info">
+                <h1> Get in Touch: </h1>
+                <div id="email">
+                    <a href="mailto:guptagautam01@gmail.com?subject=Contact via website">
+                        <img src="assets/icons8-mail-100.png">
+                        <p>Email Me</p>
+                    </a> 
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6584479951953!2d77.03577601508213!3d28.610021582426725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05dd375e5a13%3A0x108adaa3abe4bd07!2sNetaji%20Subhas%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1650017142058!5m2!1sen!2sin" width="400px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
 

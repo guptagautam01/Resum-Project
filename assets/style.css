@@ -38,7 +38,9 @@ body{
 #name-social-container{
     margin-top: 10vh;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 #my-name{
+    font-family: 'Roboto Condensed', sans-serif;    
     font-size: 3rem;
     letter-spacing: 0.1rem;
     color: white;
@@ -56,6 +58,13 @@ body{
 }   
 
 /*NavBar*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.nav-menu{
+    /*font-family: 'Bebas Neue', cursive;*/
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+}
 .nav-menu li a{
     transition: color 1s, border-bottom 2s;
 }
@@ -79,11 +88,132 @@ body{
     border: grey 1px;  
     box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
 } 
+
+.fade-in-image {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 #about p{
     height: auto;
     width: 90%;
     margin: auto;
     margin-top: 5vh;
+    /*
     font: 20px Bradley Hand ITC;
     font-weight: bold;
+    */
+    font-family: 'Concert One', cursive;
+    font-size: 19px
+}
+
+/*Contact Section */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+#contact{
+    background: rgb(11,7,73);
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 20px 20px 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.messageForm{
+    width: 40%;
+    padding-left: 2%;
+}
+.formElement{
+    background: transparent;
+    border: 0px;
+    /*border-bottom: 2px solid rgb(164, 205, 240); */
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    width: 100%;
+    color : white;
+}
+.inputContainer{
+    padding: 5px 25px 5px 5px;
+    width : 90%;
+}
+.inputContainer textarea{
+    resize: none;
+}
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+.btn{
+    background-color: #c5ecfd;
+    border-radius: 10px;
+    color: #0f0c29;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#contact-info{
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#email{
+    padding: 10px;
+}
+#email a img{
+    max-height: 30px;
+    max-width: 30px;
+    float: left;
+    padding: 0px;
+}
+#email a{
+    color: #c5ecfd;
+    text-decoration: none;
+}
+#email a:hover{
+    color: aquamarine;
+}
+#email a p{
+    display: inline;
+    margin-left:10px;
+    font-size: 20px;
+}
+#contact-info h1{
+    color: whitesmoke;
+}
+#contact-info iframe{
+    padding-top: 5%;
 }
