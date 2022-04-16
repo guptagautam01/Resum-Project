@@ -33,7 +33,9 @@ body{
 .text-centre{
     text-align: center;
 }
-
+.grey-gradient{
+    background-image: linear-gradient(rgba(214, 230, 237, 0) 0%, rgba(214, 230, 237, 1) 10%, rgba(214, 230, 237, 1) 90%, rgba(214, 230, 237, 0) 100%);
+}
 /*Name + social*/
 #name-social-container{
     margin-top: 10vh;
@@ -74,9 +76,12 @@ body{
 }
 
 /*About Section */
+#about{
+    padding: 20px;
+}
 #my-image{
     height: auto;
-    width: 12rem;
+    width: 10rem;
     margin: auto;
     margin-top: -15vh;
     position: relative;
@@ -124,15 +129,20 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 #about p{
     height: auto;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 5vh;
     /*
-    font: 20px Bradley Hand ITC;
-    font-weight: bold;
-    */
     font-family: 'Concert One', cursive;
     font-size: 19px
+    */
+    font-size: 20px;
+    text-align: justify;
+}
+
+#about p b{
+    color: #000080;
+    font-size: 22px;
 }
 
 /*Contact Section */
@@ -216,4 +226,70 @@ body{
 }
 #contact-info iframe{
     padding-top: 5%;
+}
+
+/*Skills Section */
+#skills{
+    padding: 1%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+#skill-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 12%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    background-color: #e91e63;
+    transition: 1s;
+}
+.card img:hover {
+    background-color: #ff9800;
+}
+.card-container {
+    font-family: 'Roboto Condensed', sans-serif;  
+    padding: 2px 16px;
+}
+
+/*Section Header*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+.section-header{
+    padding: 0px 15px 0px 0px;
+    border: 2px black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Portfolio */
+#portfolio{
+    padding-bottom: 3%;
+}
+#portfolio-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#portfolio-container img{
+    background-color: white;
+    width:20vw;
+    height: 20vw;
+    transition: 0.5s;
+}
+#portfolio-container img:hover{
+    opacity: 0.5;
 }
