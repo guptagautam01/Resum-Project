@@ -60,7 +60,6 @@ body{
 }   
 
 /*NavBar*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 .nav-menu{
     /*font-family: 'Bebas Neue', cursive;*/
@@ -68,10 +67,10 @@ body{
     font-size: large;
 }
 .nav-menu li a{
-    transition: color 1s, border-bottom 2s;
+    transition: 0.5s;
 }
 .nav-menu li a:hover{
-    color:lightgray;
+    color:rgb(215, 216, 236);
     border-bottom: 1px solid;
 }
 
@@ -150,12 +149,17 @@ body{
 #contact{
     background: rgb(11,7,73);
     background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    padding: 20px 20px 20px 20px;
     font-family: 'Roboto', sans-serif;
+    padding: 5px 4% 1px;
+}
+.light-heading{
+    color:#dff1f9;
+}
+#contact-container{
+    padding-bottom: 40px;
     display: flex;
     flex-direction: row;
 }
-
 .messageForm{
     width: 40%;
     padding-left: 2%;
@@ -232,7 +236,8 @@ body{
 #skills{
     padding: 1%;
     text-align: center;
-    padding-bottom: 3%;
+    padding-top: 4%;
+    padding-bottom: 10%;
 }
 #skill-container{
     display: flex;
@@ -277,7 +282,8 @@ body{
 
 /* Portfolio */
 #portfolio{
-    padding-bottom: 3%;
+    padding:5%;
+    margin-bottom: 20px;
 }
 #portfolio-container{
     display: flex;
@@ -292,4 +298,85 @@ body{
 }
 #portfolio-container img:hover{
     opacity: 0.5;
+}
+
+/*Timeline Section */
+.timeline{
+    position: relative;
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.timeline-block{
+    position: relative;
+    margin:5px;
+    width: 45%;
+    left:5%;
+    min-height: 150px;
+}
+
+.timeline-block:nth-child(2n){
+    left:53%;
+}
+
+.timeline-block:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top:40%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #4e45ab;
+    right: -4.5%;
+}
+.timeline-block:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top:33%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #4e45ab;
+    left: -3.8%;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0px;
+    border: 2px dashed #716da4;
+    top:10%;
+    left : 52%;
+}
+.time-traveller{
+    position: sticky;
+    top: 20%;
+    margin-left: -10px;
+    width:20px
+}
+.timeline-block h1{
+    padding: none;
+    font-family: 'Roboto Condensed', sans-serif; 
+    margin: 0px;
+    font-size: 18px;
+}
+@import url('https://fonts.googleapis.com/css2?family=BenchNine&display=swap');
+.timeline-block h3{
+    padding: none;
+    color: grey;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 12.5px;
+    margin: 5px 0px 5px;
+    font-style: italic
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+.timeline-block h4{
+    padding: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;   
+    margin: 0px 
+}
+.timeline-block:nth-child(2n+1){
+    text-align: right;
 }
